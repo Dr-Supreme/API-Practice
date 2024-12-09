@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<script src="Pokemon.component.js"> </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> API Practice : Pokedex Search Up</h1>
+        <p> What is your Pokemons name: </p>
+        <input id = "pokemonName" >
+        <button onClick="getPokemon()"> Fetch Pokemon </button>
+        
+        <img src="" alt="Pokemon Picture" id="pokemonPic" style="display: none">
+        <!-- <div *ngIf="pokedex"> -->
+
+        <div if = "pokemonFound">
+            <p>Name: <span id="pokeCard"></span></p>
+            <p>Abilities: <span id="pokeAblities" *ngFor></span></p>
+            <p>Type: <span id="pokeType"></span></p>
+            <p>Height: <span id="pokeHeight"></span></p>
+            <!-- <p> name is : <span> {{name}} </span></p>
+            <p id="pokemonPic"> abilities are  :
+                <div *ngFor="let a of abilities">
+                    <li> a </li>
+                </div>
+            </p>
+            <img src="" alt="Pokemon Picture" id="pokemonPics" style="display: none"> -->
+        </div>
+
+</body> 
+</html>
